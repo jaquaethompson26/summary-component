@@ -12,3 +12,9 @@ body {
     background: white;
     border-radius: 12px;
 }
+
+.summary a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
