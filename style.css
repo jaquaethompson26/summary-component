@@ -18,3 +18,7 @@ body {
     margin-top: 10px;
     text-decoration: none;
 }
+
+.summary-details {
+    display: none;
+}
