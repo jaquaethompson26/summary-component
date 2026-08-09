@@ -35,7 +35,15 @@ body {
 }
 
 .summary button:hover {
-    opacity: 0.8;
+    outline: 3px solid lightslategray;
+    outline-offset: 1px;
+    opacity: 0.75;
+}
+
+.summary button:focus-visible {
+    outline: 3px solid lightslategray;
+    outline-offset: 1px;
+    opacity: 0.75;
 }
 
 .summary-details {
@@ -45,5 +53,15 @@ body {
 }
 
 .summary-details.open {
-    max-height: 200px;
+    max-height: 1000px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    .summary {
+        padding: 18px;
+    }
 }

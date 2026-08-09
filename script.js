@@ -9,9 +9,11 @@ readMoreLinks.forEach(function (readMore) {
         if (details.classList.contains("open")) {
             details.classList.remove("open");
             readMore.textContent = "Read more";
+            readMore.setAttribute("aria-expanded", "false")
         } else {
             details.classList.add("open");
             readMore.textContent = "Read less";
+            readMore.setAttribute("aria-expanded", "true")
         }
     });
 });
