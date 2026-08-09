@@ -39,5 +39,11 @@ body {
 }
 
 .summary-details {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+}
+
+.summary-details.open {
+    max-height: 200px;
 }

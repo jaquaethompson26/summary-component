@@ -6,12 +6,12 @@ readMoreLinks.forEach(function (readMore) {
 
         const details = readMore.previousElementSibling;
 
-        if (details.style.display === "none") {
-            details.style.display = "block";
-            readMore.textContent = "Read less";
-        } else {
-            details.style.display = "none";
+        if (details.classList.contains("open")) {
+            details.classList.remove("open");
             readMore.textContent = "Read more";
+        } else {
+            details.classList.add("open");
+            readMore.textContent = "Read less";
         }
     });
 });
