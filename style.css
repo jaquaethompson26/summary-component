@@ -5,6 +5,10 @@ body {
     padding: 40px;
 }
 
+.paragraph-text {
+    font-size: 20px;
+}
+
 .summary {
     max-width: 600px;
     margin: 0 auto;
@@ -35,8 +39,6 @@ body {
 }
 
 .summary button:hover {
-    outline: 3px solid lightslategray;
-    outline-offset: 1px;
     opacity: 0.75;
 }
 
@@ -49,7 +51,7 @@ body {
 .summary-details {
     max-height: 0;
     overflow: hidden;
-    transition: max-height .8s ease;
+    transition: max-height .5s ease;
 }
 
 .summary-details.open {
