@@ -22,11 +22,15 @@ body {
     line-height: 1.6;
 }
 
-.summary a {
+.summary button {
     display: inline-block;
     margin-top: 10px;
-    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
     font-weight: bold;
+    cursor: pointer;
+    background-color: lightgray;
 }
 
 .summary-details {

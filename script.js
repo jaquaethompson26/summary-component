@@ -1,14 +1,17 @@
-const readMore = document.querySelector(".read-more");
-const details = document.querySelector(".summary-details");
+const readMoreLinks = document.querySelectorAll(".read-more");
 
-readMore.addEventListener("click", function (event) {
-    event.preventDefault();
+readMoreLinks.forEach(function (readMore) {
+    readMore.addEventListener("click", function (event) {
+        event.preventDefault();
 
-    if (details.style.display === "none") {
-        details.style.display = "block";
-        readMore.textContent = "Read less";
-    } else {
-        details.style.display = "none";
-        readMore.textContent = "Read more";
-    }
+        const details = readMore.previousElementSibling;
+
+        if (details.style.display === "none") {
+            details.style.display = "block";
+            readMore.textContent = "Read less";
+        } else {
+            details.style.display = "none";
+            readMore.textContent = "Read more";
+        }
+    });
 });
