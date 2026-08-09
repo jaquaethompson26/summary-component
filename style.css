@@ -30,7 +30,12 @@ body {
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
-    background-color: lightgray;
+    background-color: lightgrey;
+    transition: opacity 0.2s;
+}
+
+.summary button:hover {
+    opacity: 0.8;
 }
 
 .summary-details {
